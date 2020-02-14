@@ -7,8 +7,8 @@ body{
 #game{
     position: relative;
     margin:0 auto;
-    width:440px;
-    height: 500px;
+    width:100%;
+ 
 }
 #container{
     position: absolute;
