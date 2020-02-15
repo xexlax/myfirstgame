@@ -8,7 +8,7 @@ body{
     position: relative;
     margin:0 auto;
     width:100%;
- 
+    height: 500px;
 }
 #container{
     position: absolute;
@@ -90,5 +90,46 @@ body{
     top:505px;
 }
 #finish{
+    position: absolute;
+
+    background-color: rgba(24,26,52,0.77);
+    color: rgba(255,255,255,0.8);
+    opacity: 0.75;
+    line-height: 100px;
+
+
+    box-shadow: #777777 1px 1px 2px;
+    width:99px;
+    height:99px;
+    text-align: center;
+    font-size: 15px;
+    left:300px;top:300px;
     display: none;
+    -webkit-transition: 0.3s;/*浏览器前缀，兼容其他浏览器 chrome*/
+    -moz-transition: 0.3s;/*firefox*/
+    -ms-transition: 0.3s;/*ie*/
+    -o-transition: 0.3s;/*opera*/
+    transition: 0.3s;
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+
+    100% {
+        opacity: 0.75; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+
+    100% {
+        opacity: 0.75; /*结尾状态 透明度为1*/
+    }
 }
